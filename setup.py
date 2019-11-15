@@ -30,7 +30,7 @@ core1_ext = Extension('xija.core_1', ['xija/core_1.c'],
 core2_ext = Extension('xija.core_2', ['xija/core_2.c'],
                       extra_link_args=link_args)
 
-entry_points = {'console_scripts': 'xija_gui_fit = xija.gui_fit:main'}
+entry_points = {'console_scripts': 'xija_gui_fit = xija.gui_fit.app:main'}
 
 setup(name='xija',
       use_scm_version=True,
